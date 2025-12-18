@@ -24,30 +24,13 @@
             <div class="sidebar">
                 <h2>ADMIN</h2>
                 <h3>{{session('admin_name')}}</h3>
-                <a href="{{ route('admin.product') }}">Quản lý sản phẩm</a>
-                <a href="{{ route('admin.order') }}">Quản lý đơn hàng</a>
             </div>
 
             <div class="content flex-1">
                 <div class="d-flex justify-between align-center">
                     <h1>Trang chính</h1>
-                    <a href="{{ route('admin.logout') }}">
                         <i class="fa-solid fa-right-from-bracket"></i> Logout
                     </a>
-                </div>
-
-                <div class="card">
-                    <h2>Thống kê nhanh</h2>
-                    <p>Tổng sản phẩm: {{$data["tongSP"]}}</p>
-                    <p>Đơn hàng chờ xác nhận: {{$data["choDuyet"]}}</p>
-                </div>
-
-                <div class="card">
-                    <h2>Chức năng</h2>
-                    <ul>
-                        <li><a href="{{ route('admin.product') }}">Quản lý sản phẩm</a></li>
-                        <li><a href="{{ route('admin.order') }}">Quản lý đơn hàng</a></li>
-                    </ul>
                 </div>
             </div>
         @else
