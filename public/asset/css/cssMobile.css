@@ -1,0 +1,36 @@
+@media screen and (max-width:899px) {
+    .wrap-menu-header{
+        display: none;
+    }
+    .danh-sach-loai-san-pham{
+        display: none;
+    }
+    body > * >*{
+        padding: 0;
+    }
+    .logo{
+        font-size: 30px;
+        padding:20px;
+    }
+    .menu-cua-dien-thoai{
+        display: block;
+    }
+    .header-dien-thoai{
+        display: flex;
+        align-items: center;
+    }
+    .menu-mobile{
+        flex:1;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-mobile-1{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+    }
+    .menu-mobile-1 + .menu-mobile-1{
+        margin-top: 5px;
+    }
+    
+}

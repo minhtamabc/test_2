@@ -1,0 +1,60 @@
+/* css mobile */
+@media screen and (max-width:899px) {
+
+   /* gioi thieu */
+   .gioi-thieu {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+   }
+
+   .wrap-list-san-pham {
+      width: 100%;
+      display: block;
+   }
+
+   .wrap-chi-tiet-gioi-thieu {
+      height: auto; /* Để chiều cao tự nhiên theo ảnh */
+      margin-left: 0 !important; /* Reset margin cũ */
+      margin-bottom: 10px;
+  }
+
+   .list-san-pham {
+      display: flex;
+      flex-wrap: wrap;       /* MẤU CHỐT: Cho phép các phần tử rớt xuống dòng */
+      gap: 10px;             /* Khoảng cách giữa các ô */
+      overflow-x: visible;   /* Bỏ thanh trượt ngang */
+      padding: 0 10px;       /* Căn lề chút cho đẹp */
+      justify-content: space-between;
+   }
+
+   .btn-pre, .btn-next {
+      display: none;
+  }
+
+   .san-pham {
+      flex: 0 0 calc(50% - 5px); 
+      margin: 0;           /* Bỏ margin cũ gây lệch */
+      margin-bottom: 10px; /* Khoảng cách dãn dòng dọc */
+      height: auto;        /* Chiều cao tự do hoặc cố định */
+      min-height: 320px;   /* Đảm bảo chiều cao tối thiểu cho đều */
+      padding: 10px;       /* Thu nhỏ padding trong ô cho gọn */
+   }
+   /* Phần danh sách sản phẩm thường (bên dưới) cũng áp dụng tương tự */
+  .list-san-pham-thuong {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 10px;
+  }
+
+   /* Thêm cho sản phẩm thường ở dưới */
+   .san-pham-thuong {
+      flex: 0 0 calc(50% - 5px); /* 2 cột */
+      margin: 0;
+      margin-bottom: 10px;
+      min-height: 320px;
+   }
+
+   
+}

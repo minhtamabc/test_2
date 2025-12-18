@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+}
+body *{
+    box-sizing: border-box;
+}
+body > * > *{
+    padding: 0 40px;
+}
+main > *{
+    padding-bottom: 40px;
+}
+.modal > *{
+    padding: 0;
+}
+.img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+a,ul{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    opacity: .6;
+}
+li{
+    list-style-type: none;
+}
+h1,h2{
+    margin:10px 0;
+}
+p{
+    margin: 0;
+}
+.wid-100{
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+}
+.flex-direction-col{
+    flex-direction: column;
+}
+.flex-no-wrap{
+    flex-wrap: nowrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-1{
+    flex:1;
+}
+.title{
+ text-align: center;
+}
+
+/* button */
+.btnShop{
+    margin-top: 10px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+.i-large{
+    font-size: 1.5rem;
+}
+/* gioi thieu */
+.wrap-chi-tiet-gioi-thieu{
+    position: relative;
+}
+.gioi-thieu-text{
+    position: absolute;
+    top:30%;
+    left:10%;
+    color: white;
+}
+
+/* san pham */
+.border-gray{
+    border: 1px solid gray;
+}
+.logo-sale{
+    padding: 5px 10px;
+    border-radius:30px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    z-index: 99;
+}
+main{
+    background-color: #E8E8E8;
+}
+.best-seller{
+    background-color: white;
+}
+.btn-pre,.btn-next{
+    font-size: 30px;
+    cursor:pointer;
+}
+.wrap-1{
+    position:relative
+}
+.san-pham,.san-pham-gioi-thieu{
+    position: relative;
+    border:2px solid #E8E8E8;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-mo-ta-sp{
+    background-color: #E8E8E8;
+    font-size: 1.2rem;
+}
+.bg-mo-ta-sp .gia-mo-ta{
+    color: #751FFF;
+}
+.bg-purple{
+    background-color: #751FFF;
+}
+.bg-black{
+    background-color: black;
+}
+.txt-white{
+    color: white;
+}
+.p-0{
+    padding: 0;
+}
+
+/* gio hang */
+.bg-green{
+    background-color: green;
+    color: white;
+}
+
+/* button */
+.btn-next{
+    margin-left:20px;
+}
+.btn-pre{
+    margin-right:20px;
+}
+.btn-them-vao-gio:hover{
+    color: green;
+}
+
+/* gia san pham */
+.gia-goc{
+    opacity: .5;
+    text-decoration: line-through;
+}
+.gia-sale{
+    font-size: 1.5rem;
+}
+
+/* css - hover */
+.item-footer li{
+    margin: 2rem 0;
+    color:gray;
+}
+.item-footer a:hover,.danh-sach-loai-san-pham a:hover{
+    color:#4292DE;
+    cursor: pointer;
+}
+.btnShop:hover{
+    text-decoration: underline;
+}
+
+/* css chi tiet thong tin san pham */
+.chi-tiet-mo-ta{
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* table */
+table,td{
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+tr{
+    display: flex;
+}
+td:first-child{
+    padding-left: 1rem;
+    border:1px solid #333;
+    background-color: white;
+    flex-basis: 40%;
+    font-weight: bold;
+}
+td:nth-child(2){
+    flex: 1;
+}
+td,th{
+    padding: .5rem;
+}
+
+/* footer */
+footer{
+    padding: 3rem 0;
+}
+
+/* thong bao */
+.thong-bao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    right: 20px;
+    top:15%;
+}
+
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+        transform: translateX(80%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.notify {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+    padding:16px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #065f46;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    animation: slideLeft linear .4s, fadeOut linear 1.5s 2s forwards;
+}
+
+/* icon */
+.notify .icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.sucess{
+    background: #34d399;
+}
+.error{
+    background: rgb(243, 7, 7);
+}
+
+/* text */
+.notify .text{
+    font-size: 14px;
+}
+
+.notify .text strong {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
