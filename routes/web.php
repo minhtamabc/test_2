@@ -11,4 +11,4 @@ Route::get('/trang-chu/login',[AdminController::class, 'login'])->name('admin.lo
 Route::post('/trang-chu/login',[AdminController::class, 'handleLogin'])->name('admin.handleLogin');
 
 
-// day  la bug
+// da fix bug
