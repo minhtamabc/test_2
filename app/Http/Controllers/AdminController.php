@@ -30,7 +30,7 @@ class AdminController extends Controller
 
     //day la bug
     function abc(){
-
+        // oke da fix bug
     }
 
     function handleLogin(){
