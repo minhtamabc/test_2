@@ -28,6 +28,11 @@ class AdminController extends Controller
         return view('admin.login');
     }
 
+    //day la bug
+    function abc(){
+
+    }
+
     function handleLogin(){
         if(isset($_POST["username"]) && isset($_POST["password"])){
             if($_POST["username"] != "" || $_POST["password"] != ""){
